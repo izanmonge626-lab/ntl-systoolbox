@@ -1,0 +1,112 @@
+{
+  "general": {
+    "log_level": "INFO",
+    "output_dir": "outputs",
+    "timezone": "Europe/Paris"
+  },
+  
+  "diagnostic": {
+    "ad_dns_servers": [
+      {
+        "name": "DC01",
+        "ip": "192.168.10.10",
+        "type": "windows",
+        "username": "Administrator",
+        "password": "VotreMotDePasse",
+        "services_to_check": ["DNS", "ActiveDirectory"]
+      },
+      {
+        "name": "DC02",
+        "ip": "192.168.10.11",
+        "type": "windows",
+        "username": "Administrator",
+        "password": "VotreMotDePasse",
+        "services_to_check": ["DNS", "ActiveDirectory"]
+      }
+    ],
+    
+    "mysql_servers": [
+      {
+        "name": "WMS-DB",
+        "ip": "192.168.10.21",
+        "port": 3306,
+        "username": "admin",
+        "password": "VotreMotDePasse",
+        "database": "wms_production"
+      }
+    ],
+    
+    "servers_to_monitor": [
+      {
+        "name": "WMS-DB",
+        "ip": "192.168.10.21",
+        "os": "linux",
+        "username": "sysadmin",
+        "password": "VotreMotDePasse"
+      },
+      {
+        "name": "DC01",
+        "ip": "192.168.10.10",
+        "os": "windows",
+        "username": "Administrator",
+        "password": "VotreMotDePasse"
+      }
+    ],
+    
+    "thresholds": {
+      "cpu_warning": 80,
+      "cpu_critical": 90,
+      "ram_warning": 85,
+      "ram_critical": 95,
+      "disk_warning": 80,
+      "disk_critical": 90
+    }
+  },
+  
+  "backup": {
+    "mysql": {
+      "host": "192.168.10.21",
+      "port": 3306,
+      "username": "backup_user",
+      "password": "VotreMotDePasse",
+      "database": "wms_production",
+      "backup_dir": "outputs/backups",
+      "retention_days": 30
+    },
+    
+    "compression": {
+      "enabled": true,
+      "type": "gzip"
+    },
+    
+    "tables_to_export": [
+      "orders",
+      "inventory",
+      "shipments"
+    ]
+  },
+  
+  "audit": {
+    "network_ranges": [
+      "192.168.10.0/24",
+      "192.168.20.0/24",
+      "192.168.30.0/24",
+      "192.168.40.0/24"
+    ],
+    
+    "scan_settings": {
+      "timeout": 5,
+      "os_detection": true,
+      "service_detection": false
+    },
+    
+    "eol_database_file": "config/eol_database.json",
+    
+    "alert_thresholds": {
+      "eol_warning_days": 180,
+      "eol_critical_days": 90
+    },
+    
+    "output_formats": ["json", "csv"]
+  }
+}

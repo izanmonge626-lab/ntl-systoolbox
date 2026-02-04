@@ -1,0 +1,33 @@
+# Dépendances Python pour NTL-SysToolbox
+
+# Connexions distantes
+paramiko>=3.0.0          # SSH pour Linux
+pywinrm>=0.4.3           # WinRM pour Windows Server
+pypsrp>=0.8.1            # PowerShell Remoting
+
+# Base de données
+mysql-connector-python>=8.0.33
+pymysql>=1.0.3
+
+# Scan réseau
+python-nmap>=0.7.1
+scapy>=2.5.0
+
+# Analyse système
+psutil>=5.9.5            # Monitoring CPU/RAM/Disque
+wmi>=1.5.1 ; sys_platform == 'win32'  # Windows Management Instrumentation
+
+# CLI & Interface
+click>=8.1.0             # Interface CLI moderne
+colorama>=0.4.6          # Couleurs terminal (cross-platform)
+rich>=13.0.0             # Affichage enrichi dans le terminal
+
+# Formats de données
+PyYAML>=6.0              # Support YAML pour config
+python-dotenv>=1.0.0     # Variables d'environnement
+
+# Utilitaires
+requests>=2.31.0         # HTTP requests (pour API EOL éventuelle)
+validators>=0.22.0       # Validation IP/domain
+python-dateutil>=2.8.2   # Manipulation dates
+pip install flask

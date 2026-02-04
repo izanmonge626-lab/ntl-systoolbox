@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "last_update": "2025-02-03",
+    "source": "Compilation manuelle - Sources officielles constructeurs",
+    "note": "Les dates sont indicatives et doivent être vérifiées régulièrement"
+  },
+  
+  "operating_systems": {
+    "Windows Server": {
+      "2008": {
+        "release_date": "2008-02-27",
+        "eol_date": "2020-01-14",
+        "extended_support_end": "2020-01-14",
+        "status": "EOL"
+      },
+      "2008 R2": {
+        "release_date": "2009-10-22",
+        "eol_date": "2020-01-14",
+        "extended_support_end": "2020-01-14",
+        "status": "EOL"
+      },
+      "2012": {
+        "release_date": "2012-09-04",
+        "eol_date": "2023-10-10",
+        "extended_support_end": "2023-10-10",
+        "status": "EOL"
+      },
+      "2012 R2": {
+        "release_date": "2013-10-18",
+        "eol_date": "2023-10-10",
+        "extended_support_end": "2023-10-10",
+        "status": "EOL"
+      },
+      "2016": {
+        "release_date": "2016-10-12",
+        "eol_date": "2027-01-12",
+        "extended_support_end": "2027-01-12",
+        "status": "ACTIVE"
+      },
+      "2019": {
+        "release_date": "2018-11-13",
+        "eol_date": "2029-01-09",
+        "extended_support_end": "2029-01-09",
+        "status": "ACTIVE"
+      },
+      "2022": {
+        "release_date": "2021-08-18",
+        "eol_date": "2031-10-14",
+        "extended_support_end": "2031-10-14",
+        "status": "ACTIVE"
+      }
+    },
+    
+    "Ubuntu": {
+      "16.04": {
+        "codename": "Xenial Xerus",
+        "release_date": "2016-04-21",
+        "eol_date": "2021-04-30",
+        "extended_support_end": "2024-04-30",
+        "status": "EOL"
+      },
+      "18.04": {
+        "codename": "Bionic Beaver",
+        "release_date": "2018-04-26",
+        "eol_date": "2023-05-31",
+        "extended_support_end": "2028-04-30",
+        "status": "EXTENDED"
+      },
+      "20.04": {
+        "codename": "Focal Fossa",
+        "release_date": "2020-04-23",
+        "eol_date": "2025-04-23",
+        "extended_support_end": "2030-04-23",
+        "status": "ACTIVE"
+      },
+      "22.04": {
+        "codename": "Jammy Jellyfish",
+        "release_date": "2022-04-21",
+        "eol_date": "2027-04-21",
+        "extended_support_end": "2032-04-21",
+        "status": "ACTIVE"
+      },
+      "24.04": {
+        "codename": "Noble Numbat",
+        "release_date": "2024-04-25",
+        "eol_date": "2029-04-25",
+        "extended_support_end": "2034-04-25",
+        "status": "ACTIVE"
+      }
+    },
+    
+    "CentOS": {
+      "6": {
+        "release_date": "2011-07-10",
+        "eol_date": "2020-11-30",
+        "extended_support_end": "2020-11-30",
+        "status": "EOL"
+      },
+      "7": {
+        "release_date": "2014-07-07",
+        "eol_date": "2024-06-30",
+        "extended_support_end": "2024-06-30",
+        "status": "EOL"
+      },
+      "8": {
+        "release_date": "2019-09-24",
+        "eol_date": "2021-12-31",
+        "extended_support_end": "2021-12-31",
+        "status": "EOL",
+        "note": "Fin prématurée du support"
+      }
+    },
+    
+    "Debian": {
+      "9": {
+        "codename": "Stretch",
+        "release_date": "2017-06-17",
+        "eol_date": "2022-07-01",
+        "extended_support_end": "2022-07-01",
+        "status": "EOL"
+      },
+      "10": {
+        "codename": "Buster",
+        "release_date": "2019-07-06",
+        "eol_date": "2024-06-30",
+        "extended_support_end": "2024-06-30",
+        "status": "EOL"
+      },
+      "11": {
+        "codename": "Bullseye",
+        "release_date": "2021-08-14",
+        "eol_date": "2026-08-31",
+        "extended_support_end": "2026-08-31",
+        "status": "ACTIVE"
+      },
+      "12": {
+        "codename": "Bookworm",
+        "release_date": "2023-06-10",
+        "eol_date": "2028-06-10",
+        "extended_support_end": "2028-06-10",
+        "status": "ACTIVE"
+      }
+    },
+    
+    "Windows 10": {
+      "21H2": {
+        "release_date": "2021-11-16",
+        "eol_date": "2024-06-11",
+        "extended_support_end": "2024-06-11",
+        "status": "EOL"
+      },
+      "22H2": {
+        "release_date": "2022-10-18",
+        "eol_date": "2025-10-14",
+        "extended_support_end": "2025-10-14",
+        "status": "ACTIVE"
+      }
+    },
+    
+    "Windows 11": {
+      "21H2": {
+        "release_date": "2021-10-04",
+        "eol_date": "2024-10-08",
+        "extended_support_end": "2024-10-08",
+        "status": "EOL"
+      },
+      "22H2": {
+        "release_date": "2022-09-20",
+        "eol_date": "2025-10-14",
+        "extended_support_end": "2025-10-14",
+        "status": "ACTIVE"
+      },
+      "23H2": {
+        "release_date": "2023-10-31",
+        "eol_date": "2026-11-10",
+        "extended_support_end": "2026-11-10",
+        "status": "ACTIVE"
+      }
+    }
+  }
+}
