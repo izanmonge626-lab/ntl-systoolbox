@@ -30,4 +30,4 @@ python-dotenv>=1.0.0     # Variables d'environnement
 requests>=2.31.0         # HTTP requests (pour API EOL éventuelle)
 validators>=0.22.0       # Validation IP/domain
 python-dateutil>=2.8.2   # Manipulation dates
-pip install flask
+flask
