@@ -147,6 +147,53 @@ def get_local_ip():
         return "127.0.0.1"
 
 
+
+
+def get_local_ips():
+    """
+    Récupère l'ensemble des adresses IPv4 locales de la machine.
+
+    Utile pour considérer comme "local" une IP saisie (ex: 192.168.x.x)
+    même si get_local_ip() renvoie une autre interface (VPN, multi-cartes, etc.).
+
+    Returns:
+        set[str]: Ensemble d'IPs locales (inclut 127.0.0.1)
+    """
+    ips = {"127.0.0.1"}
+
+    try:
+        hostname = socket.gethostname()
+
+        # Méthode 1: gethostbyname_ex
+        try:
+            _, _, host_ips = socket.gethostbyname_ex(hostname)
+            for ip in host_ips:
+                if "." in ip:
+                    ips.add(ip)
+        except Exception:
+            pass
+
+        # Méthode 2: getaddrinfo
+        try:
+            for res in socket.getaddrinfo(hostname, None):
+                ip = res[4][0]
+                if "." in ip:
+                    ips.add(ip)
+        except Exception:
+            pass
+
+        # Méthode 3: IP "défaut" (si dispo)
+        try:
+            ips.add(get_local_ip())
+        except Exception:
+            pass
+
+    except Exception:
+        pass
+
+    return ips
+
+
 def format_mac_address(mac):
     """
     Formate une adresse MAC au format standard
